@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv/
+env/
+venv/
+*.egg-info/
+*.egg
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# PostgreSQL data
+postgres_data/
+
+# Redis data (اگر volume local استفاده کردی)
+redis_data/
+
+# IDE / Editor files
+*.swp
+*.swo
+.idea/
+
+# Pytest cache
+.pytest_cache/
