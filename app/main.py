@@ -41,6 +41,9 @@ def create_or_update_city(
     db.commit()
     db.refresh(city)
 
+    # Update cache with the new/updated value to keep it in sync
+    set_cache(city.city_name, city.country_code)
+
     return city
 
 
